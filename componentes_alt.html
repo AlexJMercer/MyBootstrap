@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <!--link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet"-->
+    <!--link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet"-->
+    <!--link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet"-->
+    <!--Fonts and icons-->
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Bootstrap - Apresentação</title>
+
+    <!-- Bootstrap core CSS -->
+      <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="dist/css/animate.css" rel="stylesheet">
+      <link rel="stylesheet" href="dist/css/codemirror.css">
+      <link rel="stylesheet" href="dist/theme/monokai.css">
+
+
+
+
+    <!-- Custom styles for this template -->
+    <!--link href="starter-template.css" rel="stylesheet"-->
+
+    <style type="text/css">
+      body{
+        font-family: 'Open Sans';
+        background-color: #f7f7f7;
+      }
+      h1{
+
+      }
+
+      .title{
+        font-size: 3.5rem;
+        font-weight: bold;
+      }
+
+      .subtext{
+        font-size:1.75rem;
+      }
+
+      .line{
+        border: 0.5px solid;
+      }
+
+      .teste{
+        background-color: #8652D4;
+      }
+      .CodeMirror{
+        height: auto;
+        width: 100%;
+      }
+
+      .thin{
+        padding: 0.75rem 0 !important;
+      }
+
+      .screen-size{
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .modal-xl{
+        max-width: 1000px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-soft-transparency-light">
+      <a class="navbar-brand" href="#"><img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" alt="" class="img-fluid" width="30" height="30"> /Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="navbar-form form-group">
+            <button class="btn btn-outline-v2-primary my-2 my-sm-0" type="submit">Search</button>
+          </div>
+        </form>
+      </div-->
+    </nav>
+
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 teste">
+        <div class="container">
+          <div class="mt-5 pt-5 header text-light">
+            <h1 class="py-4">Componentes</h1>
+            <div class="line mb-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 py-2">
+          <div class="container py-4">
+            <div class="container">
+              <h3>Sistema de Grid</h3>
+              <div class="line mb-3"></div>
+              <p>O sistema grid Bootstrap usa vários containers, linhas e colunas para arranjar e alinhar conteúdo. Ele é totalmente responsivo. Abaixo,
+                temos um exemplo e aprofundamento sobre como o grid funciona.
+              </p>
+                <div class="row mb-3">
+                  <div class="col-sm" style="background-color:#000; color:#fff; height: 50px;">
+                    Uma de três colunas
+                  </div>
+                  <div class="col-sm" style="background-color:#000; color:#fff; height: 50px;">
+                    Uma de três colunas
+                  </div>
+                  <div class="col-sm" style="background-color:#000; color:#fff; height: 50px;">
+                    Uma de três colunas
+                  </div>
+                </div>
+
+                <textarea id="grid" >
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    Uma de três colunas
+                  </div>
+                  <div class="col-sm">
+                    Uma de três colunas
+                  </div>
+                  <div class="col-sm">
+                    Uma de três colunas
+                  </div>
+                </div>
+              </div>
+                </textarea>
+
+                <table class="table table-bordered table-striped mt-3">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th class="text-center">
+                        Extra small<br />
+                        <small>&lt;576px</small>
+                      </th>
+                      <th class="text-center">
+                        Small<br />
+                        <small>&ge;576px</small>
+                      </th>
+                      <th class="text-center">
+                        Medium<br />
+                        <small>&ge;768px</small>
+                      </th>
+                      <th class="text-center">
+                        Large<br />
+                        <small>&ge;992px</small>
+                      </th>
+                      <th class="text-center">
+                        Extra large<br />
+                        <small>&ge;1200px</small>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-nowrap" scope="row">Largura máxima do container</th>
+                      <td>Não tem (auto)</td>
+                      <td>540px</td>
+                      <td>720px</td>
+                      <td>960px</td>
+                      <td>1140px</td>
+                    </tr>
+                    <tr>
+                      <th class="text-nowrap" scope="row">Prefixo em classe</th>
+                      <td><code>.col-</code></td>
+                      <td><code>.col-sm-</code></td>
+                      <td><code>.col-md-</code></td>
+                      <td><code>.col-lg-</code></td>
+                      <td><code>.col-xl-</code></td>
+                    </tr>
+                    <tr>
+                      <th class="text-nowrap" scope="row">Número de colunas</th>
+                      <td colspan="5">12</td>
+                    </tr>
+                    <tr>
+                      <th class="text-nowrap" scope="row">Largura da gutter</th>
+                      <td colspan="5">30px (15px em cada lado da coluna)</td>
+                    </tr>
+                    <tr>
+                      <th class="text-nowrap" scope="row">Aninhável</th>
+                      <td colspan="5">Sim</td>
+                    </tr>
+                    <tr>
+                      <th class="text-nowrap" scope="row">Ordenamento de coluna</th>
+                      <td colspan="5">Sim</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              <div class="line mb-5"></div>
+
+
+
+            </div>
+            <div class="container">
+              <h3>Alertas</h3>
+              <div class="line mb-3"></div>
+              <p>
+                Apresente mensagens contextuais para ações típicas dos usuários, usando este conjunto flexível de mensagens de alerta.
+              </p>
+              <p>
+                Alertas estão disponíveis para qualquer tamanho de texto, assim como um botão de dispersão opcional. Para uma estilização adequada, use uma das oito requeridas classes contextuais (ex: .alert-success).
+              </p>
+
+              <div class="alert alert-primary" role="alert">
+                Um simples alerta primary. Olha só!
+              </div>
+              <div class="alert alert-secondary" role="alert">
+                Um simples alerta secondary. Olha só!
+              </div>
+              <div class="alert alert-success" role="alert">
+                Um simples alerta success. Olha só!
+              </div>
+              <div class="alert alert-danger" role="alert">
+                Um simples alerta danger. Olha só!
+              </div>
+
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                 Um simples alerta warning. Olha só!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="alert alert-info alert-dismissible fade show" role="alert">
+                Um simples alerta info. Olha só!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="alert alert-light alert-dismissible fade show" role="alert">
+                Um simples alerta light. Olha só!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                Um simples alerta dark. Olha só!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <textarea id="alert" >
+
+                <div class="alert alert-primary" role="alert">
+                  Um simples alerta primary. Olha só!
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                  Um simples alerta secondary. Olha só!
+                </div>
+                <div class="alert alert-success" role="alert">
+                  Um simples alerta success. Olha só!
+                </div>
+                <div class="alert alert-danger" role="alert">
+                  Um simples alerta danger. Olha só!
+                </div>
+
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                   Um simples alerta warning. Olha só!
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                  Um simples alerta info. Olha só!
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="alert alert-light alert-dismissible fade show" role="alert">
+                  Um simples alerta light. Olha só!
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                  Um simples alerta dark. Olha só!
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+              </textarea>
+              <div class="line mb-5"></div>
+
+            </div>
+            <div class="container">
+              <h3>Botões</h3>
+              <div class="line mb-3"></div>
+              <p>
+                Use os botões personalizados para formulários, diálogos e outras coisas. Esse componente tem suporte a escolha de tamanhos, estados e muito mais.
+              </p>
+              <div class="my-3">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-link">Link</button>
+              </div>
+
+              <textarea id="botoes" >
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-link">Link</button>
+
+              </textarea>
+              <ul class="list-style">
+                <li>Substitua as classes modificadoras padrões pelas .btn-outline-* que removem todas as imagens de background e cores, em qualquer botão.</li>
+                <li>Botões grandes ou pequenos? Use .btn-lg ou .btn-sm para tamanhos alternativos ao padrão.</li>
+                <li>Crie botões block-level (ocupam toda a largura do elemento pai), usando a classe .btn-block.</li>
+                <li>Faça botões parecerem inativos, usando o atributo booleano disabled em qualquer elemento button.</li>
+              </ul>
+              <button type="button" class="btn btn-outline-v2-info ">Info</button>
+              <button type="button" class="btn btn-outline-v2-danger">Danger</button>
+              <div class="my-2"></div>
+              <button type="button" class="btn btn-success btn-lg">Botão grande</button>
+              <button type="button" class="btn btn-warning btn-sm">Botão pequeno</button>
+              <div class="my-2"></div>
+              <button type="button" class="btn btn-info btn-lg btn-block">Botão block-level</button>
+              <button type="button" class="btn btn-danger btn-lg btn-block">Botão block-level</button>
+              <div class="my-2"></div>
+              <button type="button" class="btn btn-lg btn-info" disabled>Botão primário</button>
+              <button type="button" class="btn btn-danger btn-lg" disabled>Botão</button>
+              <div class="my-2"></div>
+
+              <textarea id="botoes1" >
+                <button type="button" class="btn btn-outline-info">Info</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-success btn-lg">Botão grande</button>
+                <button type="button" class="btn btn-warning btn-sm">Botão pequeno</button>
+                <button type="button" class="btn btn-info btn-lg btn-block">Botão block-level</button>
+                <button type="button" class="btn btn-danger btn-lg btn-block">Botão block-level</button>
+                <button type="button" class="btn btn-lg btn-info" disabled>Botão primário</button>
+                <button type="button" class="btn btn-danger btn-lg" disabled>Botão</button>
+              </textarea>
+
+              <div class="line mb-5"></div>
+            </div>
+            <div class="container">
+              <h3>Cards</h3>
+              <div class="line mb-3"></div>
+              <p>
+                Um card é um container de conteúdo flexível e extensível. Ele tem opções para cabeçalhos e rodapés, uma larga variedade de conteúdo, cores de background contextuais e opções de display poderosas.
+              </p>
+              <div class="col-12">
+                <div class="row">
+                  <div class="mb-3">
+
+                  </div>
+                  <div class="card mx-auto my-5" style="width: 18rem;">
+                    <div class="card-picture">
+                      <img class="img-fluid rounded" src="img/ultraicon.png" alt="Imagem de capa do card">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Título do card</h5>
+                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                      <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                  </div>
+
+                  <div class="card text-center mx-auto my-3" style="width: 18rem;">
+                    <div class="card-header">
+                      Destaque
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Título especial</h5>
+                      <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                      <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                      2 dias atrás
+                    </div>
+                  </div>
+
+                  <div class="card bg-dark text-white mx-auto my-3" style="width: 50rem;">
+                    <img class="card-img" src="img/thanks.png" alt="Imagem do card">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Título do card</h5>
+                      <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+                      <p class="card-text">Atualizados 3 minutos atrás</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <textarea id="cards" >
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+    <a href="#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-header">
+    Destaque
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Título especial</h5>
+    <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <a href="#" class="btn btn-primary">Visitar</a>
+  </div>
+  <div class="card-footer text-muted">
+    2 dias atrás
+  </div>
+</div>
+
+<div class="card bg-dark text-white">
+  <img class="card-img" src=".../100px270/#55595c:#373a3c/text:Card image" alt="Imagem do card">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+    <p class="card-text">Atualizados 3 minutos atrás</p>
+  </div>
+</div>
+
+              </textarea>
+
+              <div class="line mb-5"></div>
+            </div>
+            <div class="container">
+              <h3>Carousel</h3>
+              <div class="line mb-3"></div>
+              <p>
+                O carousel é um slideshow para fazer um giro em vários coteúdos, construído com CSS 3D transforms e um pouco de JavaScript.
+                Ele funciona com o uso de imagens, texto ou marcação personalizada. Também possui suporte para controles anterior, próximo e indicadores.
+              </p>
+              <div class="container mb-3" style="width:75%">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/xenoverse_2.png" alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/kaiokenblue.png" alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/son.png" alt="Terceiro Slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                  </a>
+                </div>
+
+              </div>
+
+              <textarea id="carousel">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide" alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                  </a>
+                </div>
+              </textarea>
+
+              <div class="line mb-5"></div>
+            </div>
+            <div class="container">
+              <h3>Formulários</h3>
+              <div class="line mb-3"></div>
+              <p>
+                Exemplos, instruções para estilizar campos de formulários, opções de layout e componentes personalizados para criar uma grande variedade de formulários.
+              </p>
+              <p>
+                Se assegure de usar um atributo type adequado em todos inputs (email em campos de email, por exemplo) para conseguir se aproveitar dos inputs, como seletores de números, verificadores de emails, etc.
+              </p>
+
+              <form class="px-3 py-3 mb-3" style="border:1px solid #000a0c;">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Endereço de email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                  <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Senha</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+
+
+              <textarea id="forms">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Endereço de email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Senha</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+              </textarea>
+
+              <p class="mt-3">
+                Campos de formulário textuais como input, select e textarea são estilizados com a classe .form-control. Ela possui estilos para aparência, estado de foco e muito mais.
+              </p>
+              <div class="container-fluid">
+                <form class="px-3 py-3 mb-3">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Endereço de email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Select de exemplo</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect2">Exemplo de select múltiplo</label>
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </form>
+              </div>
+              <textarea id="forms1" >
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Endereço de email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Select de exemplo</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Exemplo de select múltiplo</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+              </textarea>
+
+              <p class="mt-3">
+                Tamanhos: Defina alturas, usando classes como .form-control-lg e .form-control-sm.
+              </p>
+
+              <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+              <div class="mt-3"></div>
+              <input class="form-control" type="text" placeholder="Input padrão">
+              <div class="mt-3"></div>
+              <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+              <div class="mt-3"></div>
+              <textarea id="forms2">
+<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+<input class="form-control" type="text" placeholder="Input padrão">
+<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+              </textarea>
+
+              <p class="mt-3">Por padrão, qualquer número de checkboxes e radios, que são irmãos imediatos, vão se empilhar e receber espaçamento apropriado com a classe .form-check.</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Checkbox padrão
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                <label class="form-check-label" for="defaultCheck2">
+                  Checkbox desativado
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Radio padrão
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Segundo radio padrão
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                <label class="form-check-label" for="exampleRadios3">
+                  Radio desativado
+                </label>
+              </div>
+              <div class="mb-2"></div>
+              <textarea id="forms3" cols="30" rows="10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Checkbox padrão
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                  <label class="form-check-label" for="defaultCheck2">
+                    Checkbox desativado
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Radio padrão
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Segundo radio padrão
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                  <label class="form-check-label" for="exampleRadios3">
+                    Radio desativado
+                  </label>
+                </div>
+              </textarea>
+
+              <p class="mt-3">
+                Layouts mais complexos também podem ser criados com o sistema grid.
+              </p>
+              <form class="px-3 py-3 mb-3">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Endereço</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Endereço 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputEstado">Estado</label>
+                    <select id="inputEstado" class="form-control">
+                      <option selected>Escolher...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputCEP">CEP</label>
+                    <input type="text" class="form-control" id="inputCEP">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Clique em mim
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+              </form>
+              <div class="mb-2">
+
+              </div>
+              <textarea id="forms4" rows="8" cols="80">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Senha</label>
+                      <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress">Endereço</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress2">Endereço 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">Cidade</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputEstado">Estado</label>
+                      <select id="inputEstado" class="form-control">
+                        <option selected>Escolher...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                      <label for="inputCEP">CEP</label>
+                      <input type="text" class="form-control" id="inputCEP">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Clique em mim
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+              </textarea>
+
+              <p class="mt-3">
+                Crie formulários horizontais com o grid, usando a classe .row em grupos de formulários e as classes .col-*-* para especificar a largura de seus labels e controles.
+                Também, se assegure de usar .col-form-label no seu label, para que ele se centralize verticalmente com seus campos de formulário.
+              </p>
+              <p>
+                As vezes, você pode precisar usar utilitários de margem ou padding para criar o alinhamento perfeito que precisa.
+                Por exemplo, nós removemos padding-top em nossos inputs radios empilhados para melhorar o alinhamento da baseline do texto.
+              </p>
+
+              <form class="px-3 py-3 mb-3">
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Senha</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Senha">
+                  </div>
+                </div>
+                <fieldset class="form-group">
+                  <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="opcao1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          Primeiro radio
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="opcao2">
+                        <label class="form-check-label" for="gridRadios2">
+                          Segundo radio
+                        </label>
+                      </div>
+                      <div class="form-check disabled">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="opcao3" disabled>
+                        <label class="form-check-label" for="gridRadios3">
+                          Terceiro radio desativado
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="form-group row">
+                  <div class="col-sm-2">Checkbox</div>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Checkbox exemplo
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                  </div>
+                </div>
+              </form>
+              <textarea id="forms5" rows="8" cols="80">
+                <form>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Senha</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Senha">
+                    </div>
+                  </div>
+                  <fieldset class="form-group">
+                    <div class="row">
+                      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="opcao1" checked>
+                          <label class="form-check-label" for="gridRadios1">
+                            Primeiro radio
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="opcao2">
+                          <label class="form-check-label" for="gridRadios2">
+                            Segundo radio
+                          </label>
+                        </div>
+                        <div class="form-check disabled">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="opcao3" disabled>
+                          <label class="form-check-label" for="gridRadios3">
+                            Terceiro radio desativado
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="form-group row">
+                    <div class="col-sm-2">Checkbox</div>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                          Checkbox exemplo
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
+                  </div>
+                </form>
+              </textarea>
+
+              <div class="line mb-5"></div>
+            </div>
+            <div class="container">
+              <h3>Modal</h3>
+              <div class="line mb-3"></div>
+              <p>
+                Use o plugin JavaScript modal para criar diálogos em seu site para notificações e outros tipos de conteúdos customizados.
+              </p>
+              <!-- Botão para acionar modal -->
+              <button type="button" class="btn btn-orange btn-block" data-toggle="modal" data-target="#modalExemplo">
+                Abrir modal de demonstração
+              </button>
+              <div class="mb-3"></div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/ultraicon.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <textarea id="modal" rows="8" cols="80">
+                <!-- Botão para acionar modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+                  Abrir modal de demonstração
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </textarea>
+              <div class="line mb-5"></div>
+            </div>
+            <div class="container">
+              <h3>Navbars</h3>
+              <div class="line mb-3"></div>
+              <p>
+                Documentação e exemplos para o cabeçalho de navegação, o navbar. Inclui suporte para logo, navegação, plugin collapse e muito mais.
+              </p>
+              <ul class="list-styled">
+                <li>Navbars precisam de um .navbar com .navbar-expand{-sm|-md|-lg|-xl} (para responsividade) e classes do esquema de cores.</li>
+                <li>Navbars e seus conteúdos são fluidos, por padrão.</li>
+              </ul>
+              <h6>Conteúdo suportado</h6>
+              <ul class="list-styled">
+                <li>.navbar-brand para o nome de seu projeto, produto ou companhia;</li>
+                <li>.navbar-nav para obter uma leve navegação com suporte a dropdowns;</li>
+                <li>.navbar-toggler para usar com nosso plugin collapse e outros comportamentos;</li>
+                <li>.form-inline para qualquer campo de formulário e ações;</li>
+                <li>.navbar-text para adicionar texto centralizado verticalmente;</li>
+                <li>.collapse.navbar-collapse para agrupar e esconder conteúdos navbar, de acordo com o breakpoint do pai.</li>
+              </ul>
+
+              <div class="container my-4">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Ação</a>
+                          <a class="dropdown-item" href="#">Outra ação</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Desativado</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                  </div>
+                </nav>
+              </div>
+              <textarea id="navbars" cols="30" rows="10">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Ação</a>
+                          <a class="dropdown-item" href="#">Outra ação</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Desativado</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                  </div>
+                </nav>
+              </textarea>
+              <h6 class="mt-5">Esquema de cores</h6>
+              <p>Escolha de .navbar-light (cores de fundo leves) até .navbar-dark (cores de fundo escuras). Depois, personalize o resto com utilitários .bg-*.</p>
+              <div class="container my-4">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Ação</a>
+                          <a class="dropdown-item" href="#">Outra ação</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Desativado</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                      <button class="btn btn-outline-v2-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                  </div>
+                </nav>
+                <div class="mb-3"></div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Ação</a>
+                          <a class="dropdown-item" href="#">Outra ação</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Desativado</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                      <button class="btn btn-outline-v2-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                  </div>
+                </nav>
+                <div class="mb-3"></div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Ação</a>
+                          <a class="dropdown-item" href="#">Outra ação</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Desativado</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                      <button class="btn btn-outline-v2-info my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                  </div>
+                </nav>
+                <div class="mb-3"></div>
+              </div>
+
+              <textarea id="navbars1">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Ação</a>
+                          <a class="dropdown-item" href="#">Outra ação</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Desativado</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                  </div>
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Ação</a>
+                          <a class="dropdown-item" href="#">Outra ação</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Desativado</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                  </div>
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Ação</a>
+                          <a class="dropdown-item" href="#">Outra ação</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Desativado</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                  </div>
+                </nav>
+              </textarea>
+              <div class="line mb-5"></div>
+            </div>
+            <div class="container">
+              <h3>Popover e Tooltips</h3>
+              <div class="line mb-3"></div>
+              <p>O plugin Popover é similar as Tooltips; É uma caixa pop-up que aparece quando o usuário clica em um elemento. A diferença é que um Popover pode conter muito mais conteúdo.</p>
+              <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover na parte superior
+              </button>
+
+              <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover na direita
+              </button>
+
+              <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover na parte inferior
+              </button>
+
+              <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover na esquerda
+              </button>
+              <div class="mb-4"></div>
+              <textarea id="popovers">
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                  Popover na parte superior
+                </button>
+
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                  Popover na direita
+                </button>
+
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                  Popover na parte inferior
+                </button>
+
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                  Popover na esquerda
+                </button>
+
+                <script type="text/javascript">
+                $(function () {
+                  $('[data-toggle="popover"]').popover();
+                })
+                </script>
+
+              </textarea>
+              <div class="mb-4"></div>
+              <p>O plugin Tooltip é uma pequena caixa pop-up que aparece quando o usuário move o cursor do mouse sobre um elemento.</p>
+              <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip na parte superior">
+                Tooltip na parte superior
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip na direita">
+                Tooltip na direita
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip na parte inferior">
+                Tooltip na parte inferior
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip na esquerda">
+                Tooltip na esquerda
+              </button>
+              <div class="mb-4"></div>
+              <textarea id="tooltips">
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip na parte superior">
+                  Tooltip na parte superior
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip na direita">
+                  Tooltip na direita
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip na parte inferior">
+                  Tooltip na parte inferior
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip na esquerda">
+                  Tooltip na esquerda
+                </button>
+
+                <script type="text/javascript">
+                $(function () {
+                  $('[data-toggle="tooltip"]').tooltip();
+                })
+                </script>
+
+              </textarea>
+              <div class="line mb-5"></div>
+            </div>
+            <div class="container">
+              <h3>Imagens e figuras</h3>
+              <div class="line mb-3"></div>
+              <p>Imagens no Bootstrap são feitas responsivas com a classe .img-fluid.
+                As declarações max-width: 100%; e height: auto; são aplicadas a imagem, de modo que ela escale junto ao elemento pai.</p>
+                <div class="container mb-3">
+                  <img src="img/son_goku.png" class="img-fluid" alt="Imagem responsiva">
+                </div>
+
+                <textarea id="image">
+                  <img src="..." class="img-fluid" alt="Imagem responsiva">
+                </textarea>
+
+                <div class="container mt-3 mb-3">
+                  <p>Thumbnail: você pode usar .img-thumbnail para dar uma borda arredondada de 1px a uma imagem.</p>
+                  <img src="img/ssbpng.png" alt="..." class="img-thumbnail mx-auto d-block" width="200" height="200">
+                </div>
+
+                <textarea id="image2">
+                  <img src="..." alt="..." class="img-thumbnail">
+                </textarea>
+              <div class="line mb-5"></div>
+            </div>
+            <div class="container">
+              <h3>Espaçamento</h3>
+              <div class="line mb-3"></div>
+              <p>Use valores de margin e padding responsivos, em um elemento ou em alguns de seus lados, usando classes de utilitárias.
+                Elas dão suporte para propriedades individuais, todas as propriedades verticais ou horizontais.
+                Essas classes são construídas a partir de um mapa Sass, que possui valores variando de .25rem até 3rem. É possivel adicionar mais
+                valores ao mapa Sass.
+              </p>
+              <h6>Como funciona</h6>
+              <p>O campo propriedade pode ser:</p>
+              <ul class="list-styled">
+                <li>m - para usar margin;</li>
+                <li>p - para usar padding.</li>
+              </ul>
+              <p>O campo lados pode ser:</p>
+              <ul class="list-styled">
+                <li>t - para usar margin-top ou padding-top;</li>
+                <li>b - para usar margin-bottom ou padding-bottom;</li>
+                <li>l - para usar margin-left ou padding-left;</li>
+                <li>r - para usar margin-right ou padding-right;</li>
+                <li>x - para usar margem ou padding, tanto na esquerda quanto direita;</li>
+                <li>y - para usar margem ou padding, tanto na parte superior quanto na inferior;</li>
+                <li>Deixe o campo em branco, para usar margin ou padding em todos os quatro lados do elemento.</li>
+              </ul>
+              <p>O campo tamanho pode ser:</p>
+              <ul class="list-styled">
+                <li>0 - para remover o padding ou margin;</li>
+                <li>1 - para usar a margin ou padding com valor de $spacer * .25;</li>
+                <li>2 - para usar a margin ou padding com valor de $spacer * .5;</li>
+                <li>3 - para usar a margin ou padding com valor de $spacer;</li>
+                <li>4 - para usar a margin ou padding com valor de $spacer * 1.5;</li>
+                <li>5 - para usar a margin ou padding com valor de $spacer * 3;</li>
+                <li>auto - para usar a margin com valor de auto.</li>
+              </ul>
+
+              <textarea id="espac">
+                .mt-0 {
+                  margin-top: 0 !important;
+                }
+
+                .ml-1 {
+                  margin-left: ($spacer * .25) !important;
+                }
+
+                .px-2 {
+                  padding-left: ($spacer * .5) !important;
+                  padding-right: ($spacer * .5) !important;
+                }
+
+                .p-3 {
+                  padding: $spacer !important;
+                }
+              </textarea>
+
+              <div class="line mb-5"></div>
+            </div>
+            <div class="container">
+              <h3>Cores</h3>
+              <div class="line mb-3"></div>
+              <p> Você pode definir o background de um elemento, com classes contextuais.
+                  Utilitários de background não definem propriedades color, então, em alguns casos, você precisará de utilitários de texto.
+              </p>
+              <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+              <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+              <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+              <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+              <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+              <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+              <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+              <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+              <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+              <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+
+              <textarea id="cores" cols="30" rows="10">
+                <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+                <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+              </textarea>
+              <div class="line mb-3"></div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-12 bg-info py-2">
+            <div class="container py-4 text-light">
+              <h3>Para mais informações:</h3>
+              <div class="line mb-3"></div>
+              <a href="https://getbootstrap.com/docs/4.1/components/alerts/" class="text-light">Documentação completa Bootstrap <i class="fas fa-external-link-alt"></i></a>
+
+            </div>
+          </div>
+      </div>
+    </div><!--container-fluid-->
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="dist/js/codemirror.js"></script>
+    <script src="dist/mode/xml/xml.js"></script>
+    <script src="dist/mode/javascript/javascript.js"></script>
+    <script src="dist/mode/css/css.js"></script>
+    <script src="dist/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="dist/keymap/sublime.js"></script>
+    <script src="dist/js/editorMode.js"></script>
+
+
+
+    <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="popover"]').popover();
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+  </body>
+</html>

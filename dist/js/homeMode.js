@@ -46,29 +46,11 @@ function killCM(id) {
 
 window.onload = function() {
 
-        editor('grid');
-        editor('alert');
-        editor('botoes');
-        editor('botoes1');
-        editor('cards');
-        editor('carousel');
-        editor('forms');
-        editor('forms1');
-        editor('forms2');
-        editor('forms3');
-        editor('forms4');
-        editor('forms5');
-        editor('modal');
-        editor('navbars');
-        editor('navbars1');
-        editor('popovers');
-        editor('tooltips');
-        editor('image');
-        editor('image2');
-        editorCSS('espac');
-        editor('cores');
-
-
+        editor('links');
+        editor('template');
+        editorSCSS('myScss');
+        editorCSS('myCss');
+        editorCSS('minificados');
     };
 
 
